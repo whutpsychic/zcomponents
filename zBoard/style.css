@@ -1,0 +1,93 @@
+.zBoard-container {
+	position: relative;
+	height: 100%;
+}
+
+.zBoard-container .zBoard-body {
+	height: 100%;
+}
+
+.zBoard-container .zBoard-body ul {
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.zBoard-container .zBoard-body li {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.zBoard-btn {
+	position: absolute;
+	top: 0;
+	width: 50px;
+	height: 100%;
+	cursor: pointer;
+	background-color: #bbb;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.zBoard-btn:hover {
+	opacity: 0.5;
+}
+
+.zBoard-container .zBoard-btn:active {
+	background-color: #999;
+}
+
+.zBoard-container .zBoard-btn:before {
+	display: block;
+	font-size: 4em;
+	color: #eee;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.zBoard-container .zBoard-toprevious {
+	left: 0;
+}
+
+.zBoard-container .zBoard-toprevious:before {
+	content: "<";
+}
+
+.zBoard-container .zBoard-tonext {
+	right: 0;
+}
+
+.zBoard-container .zBoard-tonext:before {
+	content: ">";
+}
+
+.zBoard-container ul.zBoard-itemLink {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.zBoard-container ul.zBoard-itemLink li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	opacity: 0.5;
+	margin: 0 8px;
+	transition: 0.3s;
+	cursor: pointer;
+	background-color: transparent;
+	border: solid 2px #444;
+
+}
+
+.zBoard-container ul.zBoard-itemLink li.active {
+	background-color: #389edc;
+	border-color: #389edc;
+}
